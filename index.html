@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 
     <title>Guess the Color</title>
 
@@ -11,6 +16,25 @@
     
 </head>
 <body>
-    
+    <div class="container">
+        <div class="descriptions">
+
+            <h1>From the list below, what color am I thinking of?</h1>
+            <h2 id="colors">cores, cores, cores, cores, cores, cores, cores</h2>
+
+        </div>
+
+        <div class="result hide">
+            <p>You guessed!</p>
+            <p>It took you <span id="totalAttempt">1</span> guesses to finish the game</p>
+        </div>
+        
+        <form action="">
+
+        <input id="attempt" type="text" placeholder="yellow">
+        <input id="subimitAttempt" type="button" value="Make a guess">
+
+        </form>
+    </div>
 </body>
 </html>

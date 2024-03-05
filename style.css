@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.container {
+    text-align: center;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.result.hide {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.result {
+    display: grid;
+    gap: 2rem;
+    padding: 5rem 0 1rem;
+}
+
+form {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    
+}
+
+form input {
+    font-size: 2rem;
+    padding: .5rem 1rem;
+}
+
+form input:first-child {
+    width: 20rem;
+    border: none;
+    background-color: rgb(218, 210, 210);
+    border-radius: 3px;
+}
